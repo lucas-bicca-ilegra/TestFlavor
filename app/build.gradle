@@ -23,19 +23,19 @@ android {
     }
     productFlavors{
         phoneApp{
-            sourceSets{
-                main{
-                    res.srcDirs = ['src/phone/res']
-                }
-            }
+
         }
         tabletApp{
-            sourceSets{
-                main{
-                    res.srcDirs = ['src/tablet/res']
-                }
-            }
+
         }
+    }
+
+    sourceSets{
+        main{
+            res.srcDirs = ['src/main/res']
+        }
+        phoneApp.res.srcDirs = ['src/phone/res']
+        tabletApp.res.srcDirs = ['src/tablet/res']
     }
 }
 

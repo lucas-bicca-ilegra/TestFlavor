@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">TestFlavor</string>
+    <string name="app_name">Flavor Main</string>
+    <string name="description_concept">Testando o conceito de flavors. O flavor selecionado para este build é o
+    </string>
 </resources>
