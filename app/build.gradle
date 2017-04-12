@@ -22,11 +22,17 @@ android {
         }
     }
     productFlavors{
-        phoneApp{
-
+        APhoneApp{
+            applicationIdSuffix ".aphone"
         }
-        tabletApp{
-
+        ATabletApp{
+            applicationIdSuffix ".atablet"
+        }
+        BPhoneApp{
+            applicationIdSuffix ".bphone"
+        }
+        BTabletApp{
+            applicationIdSuffix ".btablet"
         }
     }
 
@@ -34,8 +40,10 @@ android {
         main{
             res.srcDirs = ['src/main/res']
         }
-        phoneApp.res.srcDirs = ['src/phone/res']
-        tabletApp.res.srcDirs = ['src/tablet/res']
+        APhoneApp.res.srcDirs = ['src/APhone/res']
+        ATabletApp.res.srcDirs = ['src/ATablet/res']
+        BPhoneApp.res.srcDirs = ['src/BPhone/res']
+        BTabletApp.res.srcDirs = ['src/BTablet/res']
     }
 }
 
