@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ilegra0098.testflavor.MainActivity">
+    tools:context="com.example.ilegra0098.testflavor.MainActivity"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/activity_main_text"
@@ -18,9 +19,45 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="368dp"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:text="Aplicativo A Phone"/>
+        android:background="@android:color/holo_blue_dark"
+        android:text="Aplicativo A Phone - default screen"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"/>
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <com.github.library.bubbleview.BubbleTextView
+            android:id="@+id/bubbleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello BubbleTextVew"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            app:arrowWidth="8dp"
+            app:angle="8dp"
+            app:arrowHeight="10dp"
+            app:arrowPosition="14dp"
+            app:arrowLocation="bottom"
+            app:arrowCenter="false"
+            app:bubbleColor="#7EC0EE"
+            android:visibility="invisible"
+            tools:visibility="visible"/>
+
+        <Button
+            android:id="@+id/getFocusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Focar"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
