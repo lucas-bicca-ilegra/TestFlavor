@@ -16,4 +16,5 @@ public class MainActivity extends AppCompatActivity {
         mTextView = (TextView)findViewById(R.id.activity_main_text);
         mTextView.setText(getString(R.string.description_concept) + " " + BuildConfig.FLAVOR);
     }
+
 }
